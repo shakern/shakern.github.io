@@ -1,0 +1,90 @@
+@keyframes example {
+    0% {background-color:#444554;}
+    25% {background-color: #666673;}
+    50% {background-color:#444554;}
+    100% {background-color: #666673;}
+  }
+
+body{
+    background-color: #444554;
+    animation-name: example;
+    animation-duration: 100s;
+    color: #E5D0CC;
+    
+}
+.container {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    font-family: "Georgia";
+}
+
+
+.container #header{
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.container #pt1{
+    background-image: url("leaves.jpeg");
+    margin: 0px auto;
+    padding: 1px;
+    color: #E5D0CC;
+}
+
+#splunk{
+    border: 10px dotted #BFACB5;
+    padding: 15px;
+    background: #7F7B82;
+    transform: rotate(1deg);
+}
+.container #splunktitle{
+    letter-spacing: 3px;
+}
+
+#splunkbullet{
+    font-size: 14px;
+}
+
+#blazebullet{
+    font-size: 14px;
+}
+
+#techbullet{
+    font-size: 14px;
+}
+
+.container #blazetitle{
+    letter-spacing: 3px;
+}
+
+.container #techtitle{
+    letter-spacing: 3px;
+}
+
+#blaze{
+    border: 10px dotted #BFACB5;
+    padding: 15px;
+    background: #7F7B82;
+    transform: rotate(-1deg);
+}
+
+#tech{
+    border: 10px dotted #BFACB5;
+    padding: 15px;
+    background: #7F7B82;
+    transform: rotate(1deg);
+}
+
+.photo{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width:220px;
+    height:250px;
+}
+
+ul{
+    list-style-type: circle;
+    text-align:center;
+    list-style-position: inside;
+  }
