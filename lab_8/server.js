@@ -47,8 +47,9 @@ app.get('/api', (req, res) => {
     .then((r) => r.json())
     .then((data) => {
       const courseArray = data.filter((f) => f.course_id.includes('INST'));
-      res.send({ courseArray: courseArray });
-      console.log(courseArray);
+      const instArray = courseArray.map((c) => `${c.course_id}: ${c.name}`);
+      res.send({ instArray: instArray });
+      console.log(instArray);
     })
     .catch((err) => {
       console.log(err);
