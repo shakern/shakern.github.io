@@ -24,9 +24,9 @@
           console.log(res); // logging step to check what we got
           return res;
         })
-        .then(res => res.courseArray.map(c => c.course_id))
+        .then(res => res.instArray)
         .then(codes => makeListInHTML(codes));
-    }
+    };
 
     function makeListInHTML(array) {
       const htmlTarget = document.querySelector('.content');
