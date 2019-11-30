@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample HTML Demonstration Page</title>
+    <style>
+    .layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper {
+        width: 60%;
+        height: 100vh;
+        background: grey;
+        text-align: center;
+        margin-top: -8px;
+        margin-bottom: -20px;
+    }
+
+    .newline {
+        font-size: 42px;
+        font-weight: 400;
+    }
+
+    .firstbox {
+        background: pink;
+        width: 100%;
+        height: 150px;
+        margin-top: 10px;
+    }
+    
+    .textbox {
+        height: 100px;
+        width: 350px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+    .middleleft {
+        background-color: red;
+        margin-right: 10px;
+    }
+    .middleright {
+        background-color: red;
+    }
+
+    .bottom {
+        background-color: lightblue;
+        margin: auto;
+    }
+    </style>
+</head>
+
+<body class="layout entirepage">
+    <div class="wrapper">
+        <div>
+            <p class="newsline">Sample Header</p>
+            <a href> anchor tag to nowhere</a>
+        </div>
+        <div>
+            <div class="firstbox layout">
+                <p>hello</p>
+            </div>
+            <div class="container">
+                <div class="middleleft textbox layout">
+                    <p>click me I'm great</p>
+                </div>
+                <div class="middleright textbox layout">
+                    <p>click me I'm great</p>
+                </div>
+            </div>
+            <div class="bottom textbox layout">
+                <p>World #2</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
