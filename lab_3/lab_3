@@ -61,7 +61,7 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        width: 270px;
+        width: 280px;
         margin: auto;
     }
     </style>
